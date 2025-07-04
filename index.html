@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Ayusha, a Geomatics Engineering student at Kathmandu University">
+    <meta name="keywords" content="Ayusha, Geomatics Engineering, Portfolio, Kathmandu University">
+    <meta name="author" content="Ayusha">
+    <title>Ayusha - Geomatics Engineering Portfolio</title>
+    <!-- Debug: Ensure style.css is in the same directory as this file -->
+    <link rel="stylesheet" href="style.css" onerror="console.log('CSS file not found at style.css; check directory')">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/@turf/turf@6.5.0/turf.min.js"></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#map">Map</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm Ayusha!</h1>
+            <p>Geomatics Engineering Student at Kathmandu University</p>
+            <a href="Curriculum_Vitae.pdf" class="btn" download>Download Resume</a>
+            <div class="contact-links">
+                <a href="https://www.facebook.com/AyushaSah" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/AyushaSah" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="tel:+9779823218966" aria-label="Phone">
+                    <i class="fas fa-phone"></i>
+                </a>
+                <a href="mailto:aayushas937@gmail.com" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="AyushaPhoto.jpg" alt="Ayusha's profile photo">
+            <div class="bio">
+                <p>I'm Ayusha, a passionate Geomatics Engineering student at Kathmandu University. I have a keen interest in creating innovative solutions for real-world problems.</p>
+                <p>My skills include Geographic Information System(GIS), SQL, Spatial Database Management and programming in C, C++, Java, HTML, CSS, JavaScript. I enjoy working on projects that combine technology and environmental sustainability.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="map">
+        <h2>Spatial Tools Map for Inaruwa Municipality</h2>
+        <div id="map-container" style="height: 400px; width: 100%;"></div>
+        <button id="measure-toggle" style="margin-top: 10px; padding: 5px 10px;">Toggle Distance Tool</button>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="education-list">
+            <div class="education-item">
+                <h3>Bachelor of Engineering in Geomatics Engineering</h3>
+                <p>Kathmandu University, Dhulikhel, Kavre</p>
+                <p>2021 - Present</p>
+            </div>
+            <div class="education-item">
+                <h3>Higher Secondary Education (Grades 11 and 12)</h3>
+                <p>Science (Biology with Extra Math)</p>
+                <p>Greenland International Secondart School, Biratnagar, Morang</p>
+                <p>Completed in 2020</p>
+            </div>
+            <div class="education-item">
+                <h3>Secondary Education (Grade 10)</h3>
+                <p>Koshi Public Academy, Inaruwa, Sunsari</p>
+                <p>Completed in 2018</p>
+            </div>
+            <div class="education-item">
+                <h3>Lower Secondary Education (Grade 8)</h3>
+                <p>Koshi Public Academy, Inaruwa, Sunsari</p>
+                <p>Completed in 2016</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Integrated Approach to Waste Management in Banepa Municipality: Combining Geographic Information System, Analytical Hierarchy Process, and Network Analysis for Landfill Site Selection and Route Optimization</h3>
+                <p>Developed an integrated model using GIS, AHP, and Network Analysis to select landfill sites and optimize garbage truck routes in Banepa Municipality, leveraging Handheld GPS, ArcGIS, and QGIS.</p>
+                <a href="https://www.bing.com/search?q=Integrated+Approach+to+Waste+Management+in+Banepa+Municipality%3A+++++++++++++++++++++Combining+Geographic+Information+System%2C+Analytical+Hierarchy+++++++++++++++++++++Process%2C+and+Network+Analysis+for+Landfill+Site+Selection+and+Route+++++++++++++++++&form=ANNTH1&refig=6cee4e98627e4e8884475cc26c038bb8&pc=DCTS&adppc=EDGEESS">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3>3D Model Of KU Cafe and Amphitheater</h3>
+                <p>Developed a 3D model of Kathmandu University’s Cafe and Amphitheater using 3D modeling techniques, accurately converting real-world ratios to scaled units. Gained expertise in measuring tools and scale reduction while addressing distorted scale challenges.</p>
+                <a href="#">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3>Mini Project : Selection Of Large Scale Solar Photovoltaic Project Using AHP Method in Sunsari District</h3>
+                <p>Studied the feasibility of a large-scale solar PV project in Sunsari District using AHP and GIS to support sustainable energy and boost environmental and economic benefits.</p>
+                <a href="#">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3>Mini Project : Image Processing To Make Topographical Map</h3>
+                <p>Learned photogrammetric image processing with Pix4D Mapper to create a topographical map, analyzing orthophotos, DSM, and DTM while assessing outcome accuracy.</p>
+                <a href="#">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3>Mini Project : Determining Shortest Route From Inaruwa To Kathmandu University Using pgRouting</h3>
+                <p>Calculated the shortest route from Inaruwa to Kathmandu University using pgRouting with PostGIS, demonstrating spatial database capabilities, network topology, and routing algorithms.</p>
+                <a href="#">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3>Thematic Map</h3>
+                <p>Created a thematic map using ArcGIS to visualize population density patterns, employing map symbols for clear spatial analysis.</p>
+                <a href="#">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form" action="https://formspree.io/f/myzwkqqv" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="social-links">
+            <a href="https://www.facebook.com/AyushaSah">Facebook</a>
+            <a href="https://www.linkedin.com/in/AyushaSah">LinkedIn</a>
+            <a href="mailto:aayushas937@gmail.com">Email</a>
+            <a href="tel:+9779800000">Phone</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Ayusha. All rights reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
